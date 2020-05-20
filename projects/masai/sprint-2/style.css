@@ -1,3 +1,12 @@
+*{
+    color:white;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1537572263231-4314a30d444f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80");
+}
+
+
 /* Styling for displaying Hotel Name */
 .hotelname {
     background-color:#03A9F4;
@@ -33,7 +42,7 @@ label {
 
 /*Styling for bill_dtls id to display form to input to the customer */
 #bill_dtls {
-   width: 45%;
+   width: 25%;
    margin-left: 15%;
    float: left;
 }
@@ -55,6 +64,10 @@ label {
     float: left;
 }
 
+.cll {
+    clear: left;
+}
+
 /*Styling for all the p tags in the html page */
 p {
     font-weight: bold;
@@ -62,5 +75,18 @@ p {
 
 /*Adding margin-left to the menu class in the hmtl page */
 .menu {
-    margin-left: 7%;
+    margin-left: 5%;
 }
+
+form.invoice >p {
+    text-decoration: underline;
+}
+
+#disbill {
+    color: orange
+}
+
+#get_bill > button, input {
+    color: black;
+}
+

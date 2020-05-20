@@ -68,8 +68,17 @@ function calc_bill() {
     var tot_bill = ( tot_item + tot_gst ) - discval
 
     //Displaying Total Bill
+    var item_cost = document.getElementById('costitem')
+    item_cost.textContent = "Items cost is: Rs." + tot_item + "/-"
+    
+    var disp_tax = document.getElementById('disptax')
+    disp_tax.textContent = "Tax Calculated is: Rs." + Math.round(tot_gst) + "/-"
+
+    var disc_given = document.getElementById('discgiven')
+    disc_given.textContent = "Discount is: Rs." + Math.round(discval) + "/-"
+
     var disp_bill = document.getElementById('disbill')
-    disp_bill.textContent = "The Calculated Bill is: Rs. "  + Math.round(tot_bill) + "/-"
+    disp_bill.textContent = "The Final Bill is: Rs. "  + Math.round(tot_bill) + "/-"
     
 }
 
