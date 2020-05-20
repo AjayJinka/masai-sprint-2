@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!--Linking the CSS file-->
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+
+        <!--Linking the desired font from Google Fonts. The font value has to be specified in CSS file too-->
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        
+        <!-- Displaying Hotel Name-->
+        <div class = "hotelname">
+            UDIPI HOTEL
+        </div>
+        
+        <!--Displaying Menu of the Hotel using Tables concept-->
+        <div class = "menu fll">
+            <p>Menu</p>
+            <table>
+                <tr>
+                    <td>Dosa</td>
+                    <td>Rs.50/-</td>
+                </tr>
+                <tr>
+                    <td>Idly</td>
+                    <td>Rs.35/-</td>
+                </tr>
+                <tr>
+                    <td>Puri</td>
+                    <td>Rs.40/-</td>
+                </tr>
+                <tr>
+                    <td>Pongal</td>
+                    <td>Rs.45/-</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!--Displaying form for which the user has to give input in it. Forms concept is used -->
+        <div id = "bill_dtls">
+            <p>Select the items opted by Customer</p>
+            
+            <form action="" method="get" class="bill">
+                <div class = "item">
+                    <input type="checkbox" id="Dosa" name="Dosa">
+                    <label for="Dosa">Dosa</label>
+                    <input type="text" id="Dosa_Quan" size="3" placeholder="Quantity">
+                </div>
+                <div class = "item">
+                    <input type="checkbox" id="Idly" name="Idly">
+                    <label for="Idly">Idly</label>
+                    <input type="text" id="Idly_Quan" size="3" placeholder="Quantity">
+                </div>
+                <div class = "item">
+                    <input type="checkbox" id="Puri" name="Puri">
+                    <label for="Puri">Puri</label>
+                    <input type="text" id="Puri_Quan" size="3" placeholder="Quantity">
+                </div>
+                <div class = "item">
+                    <input type="checkbox" id="Pongal" name="Pongal">
+                    <label for="Pongal">Pongal</label>
+                    <input type="text" id="Pongal_Quan" size="3" placeholder="Quantity">
+                </div>  
+                
+            </form>
+
+            <p>Choose the percentage of GST</p>
+
+            <form action="" method="get" class="tax">
+                <div class = "gst">
+                    <input type = "radio" id="old_gst" name="gstname" value="old_gst">
+                    <label for="old_gst">15%</label>
+                </div>
+                <div class = "gst">
+                    <input type = "radio" id="new_gst" name="gstname" value="new_gst">
+                    <label for="new_gst">18%</label>
+                </div>
+            </form>
+            
+            <p>Select the Discount type</p>
+
+            <form action="" method="get" class="discount">
+                <div class = "disc">
+                    <input type = "radio" id="fri_fun" name="discname" value="fri_fun">
+                    <label for="fri_fun">Friday Fun - Rs.5/-</label>
+                </div>
+                <div class = "disc">
+                    <input type = "radio" id="sun_cheer" name="discname" value="sun_cheer">
+                    <label for="sun_cheer">Sunday Cheers - Rs.10/-</label>
+                </div>
+            </form>
+
+            <div id = "get_bill">
+                <button class = "btn_style">Click here to get the Bill</button>
+            </div>
+        </div>
+
+        <!--P Tag to display the Calculated Bill-->
+        <p id="disbill" class = "calc_bill fll">
+               
+        </p>
+        
+        <script type = "text/javascript" src = "script.js"></script>
+    </body>
+</html>

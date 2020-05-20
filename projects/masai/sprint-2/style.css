@@ -1,0 +1,66 @@
+/* Styling for displaying Hotel Name */
+.hotelname {
+    background-color:#03A9F4;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+    padding: 3%;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 200%;
+}
+
+/*Styling for form tags */
+form.bill, form.tax, form.discount {
+    display: table;
+}
+
+/*Styling for div elements inside the form */
+div.item, div.gst, div.disc {
+    display: table-row;
+}
+
+/*Styling for label and input elements inside div elements of form */
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+
+/*Styling for bill_dtls id to display form to input to the customer */
+#bill_dtls {
+   width: 45%;
+   margin-left: 15%;
+   float: left;
+}
+
+#get_bill {
+    text-align: center;
+}
+
+/*Styling for the button which triggers event when clicked */
+.btn_style {
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.fll {
+    float: left;
+}
+
+/*Styling for all the p tags in the html page */
+p {
+    font-weight: bold;
+}
+
+/*Adding margin-left to the menu class in the hmtl page */
+.menu {
+    margin-left: 7%;
+}
